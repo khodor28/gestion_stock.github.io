@@ -11,7 +11,7 @@ export default defineConfig({
       registerType: 'autoUpdate',
       injectRegister: 'auto',
 
-      includeAssets: ['favicon.svg', 'apple-touch-icon.png'],
+      includeAssets: ['favicon.svg', 'apple-touch-icon.png', 'icon-192.png', 'icon-512.png'],
 
       manifest: {
         name: 'Gestion Stock',
@@ -19,19 +19,24 @@ export default defineConfig({
         start_url: '/gestion_stock.github.io/',
         scope: '/gestion_stock.github.io/',
         display: 'standalone',
-        background_color: '#ffffff',
+        background_color: '#0f172a',
         theme_color: '#0f172a',
         icons: [
           {
-            src: 'icon.svg',
+            src: 'apple-touch-icon.png',
+            sizes: '180x180',
+            type: 'image/png'
+          },
+          {
+            src: 'icon-192.png',
             sizes: '192x192',
-            type: 'image/svg+xml',
+            type: 'image/png',
             purpose: 'any maskable'
           },
           {
-            src: 'icon.svg',
+            src: 'icon-512.png',
             sizes: '512x512',
-            type: 'image/svg+xml',
+            type: 'image/png',
             purpose: 'any maskable'
           }
         ]
