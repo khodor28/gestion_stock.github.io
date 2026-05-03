@@ -1,0 +1,30 @@
+.etage-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.etage-card {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  overflow: hidden;
+}
+
+.etage-card-body {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px;
+  text-decoration: none;
+  color: var(--text);
+  min-height: 60px;
+}
+
+.etage-icon-wrap  { font-size: 1.4rem; flex-shrink: 0; }
+.etage-card-name  { font-size: 1rem; font-weight: 600; flex: 1; }
+.etage-chevron    { font-size: 1.5rem; color: var(--text-muted); font-weight: 300; }
+
+
+

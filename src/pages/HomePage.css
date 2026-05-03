@@ -1,0 +1,49 @@
+.depot-count {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  background: var(--bg);
+  padding: 4px 10px;
+  border-radius: 100px;
+  border: 1px solid var(--border);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.depot-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.depot-card {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  overflow: hidden;
+}
+
+.depot-card-body {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px;
+  text-decoration: none;
+  color: var(--text);
+  min-height: 60px;
+}
+
+.depot-icon-wrap  { font-size: 1.4rem; flex-shrink: 0; }
+.depot-card-name  { font-size: 1rem; font-weight: 600; flex: 1; }
+.depot-chevron    { font-size: 1.5rem; color: var(--text-muted); font-weight: 300; }
+
+
+
+
+
+
+
+
+
+
