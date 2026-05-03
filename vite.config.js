@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 import { VitePWA } from 'vite-plugin-pwa'
 
 export default defineConfig({
-  base: '/gestion_stock/',
+  base: '/gestion_stock.github.io/',
 
   plugins: [
     react(),
@@ -16,8 +16,8 @@ export default defineConfig({
       manifest: {
         name: 'Gestion Stock',
         short_name: 'Stock',
-        start_url: '/gestion_stock/',
-        scope: '/gestion_stock/',
+        start_url: '/gestion_stock.github.io/',
+        scope: '/gestion_stock.github.io/',
         display: 'standalone',
         background_color: '#ffffff',
         theme_color: '#0f172a',
@@ -40,7 +40,7 @@ export default defineConfig({
       workbox: {
         clientsClaim: true,
         skipWaiting: true,
-        navigateFallback: '/gestion_stock/index.html',
+        navigateFallback: '/gestion_stock.github.io/index.html',
         globPatterns: ['**/*.{js,css,html,svg,png,ico,json,woff2}'],
         runtimeCaching: []
       }
